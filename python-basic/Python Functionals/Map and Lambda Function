@@ -2,7 +2,6 @@ cube = lambda x: x*x*x # complete the lambda function
 
 def fibonacci(n):
     op = []
-    currnt = 0
     for i in range(n):
         if(i==0 or i==1):
             op.append(i)
