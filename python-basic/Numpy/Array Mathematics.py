@@ -1,13 +1,9 @@
 import numpy
 n,m = map(int, input().strip().split(' '))
-a = []
-b = []
-for i in range(n):
-    a = list(map(int,  input().strip().split(' ')))
-for i in range(n):
-    b = list(map(int,  input().strip().split(' ')))
-a = numpy.array(a)
-b = numpy.array(b)
+a = numpy.array([input().split()for i in range(n)], int)
+b = numpy.array([input().split()for i in range(n)], int)
+
+
 
 print(numpy.add(a, b))                        
 print(numpy.subtract(a, b))    
