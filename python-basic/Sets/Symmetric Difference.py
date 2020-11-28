@@ -8,5 +8,4 @@ b = set(b)
 u = a.union(b)
 i = a.intersection(b)
 res = sorted(u.difference(i))
-for i in range(len(res)):
-    print(res[i])
+print(*res, sep = '\n')
